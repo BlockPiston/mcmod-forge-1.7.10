@@ -10,3 +10,4 @@
 /.project
 /.decomp-workspace
 *.generated.gradle
+/build.gradle

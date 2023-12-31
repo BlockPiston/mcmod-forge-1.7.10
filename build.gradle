@@ -1,4 +1,0 @@
-apply from: "gradle/generated/compatibility.gradle"
-apply from: "gradle/generated/group.gradle"
-apply from: "gradle/generated/coremod.gradle"
-apply from: "../mcmod.gradle"
