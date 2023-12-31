@@ -1,4 +1,27 @@
-apply from: "../mcmod.gradle"
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "https://maven.minecraftforge.net"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+
+    dependencies {
+        classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.0.+') {
+            changing = true
+        }
+    }
+}
+
+apply plugin: 'forge'
 apply from: "gradle/generated/compatibility.gradle"
 apply from: "gradle/generated/group.gradle"
 apply from: "gradle/generated/coremod.gradle"
+apply from: "gradle/minecraft.gradle"
+apply from: "../mcmod.gradle"
+
