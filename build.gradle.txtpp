@@ -1,4 +1,0 @@
-TXTPP#include gradle/generated/include-compatibility.gradle
-TXTPP#include gradle/generated/include-group.gradle
-TXTPP#include gradle/generated/include-coremod.gradle
-TXTPP#include ../mcmod.gradle
